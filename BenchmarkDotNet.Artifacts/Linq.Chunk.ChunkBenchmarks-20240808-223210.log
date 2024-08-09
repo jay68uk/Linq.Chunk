@@ -1,0 +1,13 @@
+// Validating benchmarks:
+// Benchmark ChunkBenchmarks.BenchmarkLinqChunk: DefaultJob
+//    * BenchmarkDotNet requires dotnet SDK to be installed or path to local dotnet cli provided in explicit way using `--cli` argument, benchmark 'ChunkBenchmarks.BenchmarkLinqChunk: DefaultJob' will not be executed
+
+// Benchmark ChunkBenchmarks.BenchmarkManualChunk: DefaultJob
+//    * BenchmarkDotNet requires dotnet SDK to be installed or path to local dotnet cli provided in explicit way using `--cli` argument, benchmark 'ChunkBenchmarks.BenchmarkManualChunk: DefaultJob' will not be executed
+
+// Benchmark ChunkBenchmarks.BenchmarkLinqChunkSemaphore: DefaultJob
+//    * BenchmarkDotNet requires dotnet SDK to be installed or path to local dotnet cli provided in explicit way using `--cli` argument, benchmark 'ChunkBenchmarks.BenchmarkLinqChunkSemaphore: DefaultJob' will not be executed
+
+// Benchmark ChunkBenchmarks.BenchmarkManualChunkSemaphore: DefaultJob
+//    * BenchmarkDotNet requires dotnet SDK to be installed or path to local dotnet cli provided in explicit way using `--cli` argument, benchmark 'ChunkBenchmarks.BenchmarkManualChunkSemaphore: DefaultJob' will not be executed
+

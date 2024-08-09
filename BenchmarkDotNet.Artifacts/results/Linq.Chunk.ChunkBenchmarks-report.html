@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>Linq.Chunk.ChunkBenchmarks-20240808-225642</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet v0.14.0, Debian GNU/Linux 12 (bookworm) (container)
+11th Gen Intel Core i7-1165G7 2.80GHz, 1 CPU, 8 logical and 4 physical cores
+.NET SDK 8.0.303
+  [Host]     : .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+  DefaultJob : .NET 8.0.7 (8.0.724.31311), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>Method                 </th><th>Mean</th><th>Error</th><th>StdDev</th><th>Median</th><th>Gen0</th><th>Gen1</th><th>Allocated</th>
+</tr>
+</thead><tbody><tr><td>BenchmarkLinqChunk</td><td>19.53 ms</td><td>0.614 ms</td><td>1.790 ms</td><td>19.59 ms</td><td>562.5000</td><td>281.2500</td><td>3.33 MB</td>
+</tr><tr><td>BenchmarkManualChunk</td><td>15.18 ms</td><td>0.736 ms</td><td>2.171 ms</td><td>14.01 ms</td><td>500.0000</td><td>250.0000</td><td>3.01 MB</td>
+</tr><tr><td>BenchmarkLinqChunkSemaphore</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td>
+</tr><tr><td>BenchmarkManualChunkSemaphore</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td><td>NA</td>
+</tr></tbody></table>
+</body>
+</html>

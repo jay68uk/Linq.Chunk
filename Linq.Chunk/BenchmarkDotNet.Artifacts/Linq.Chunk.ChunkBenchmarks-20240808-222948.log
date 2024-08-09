@@ -1,0 +1,223 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 2 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet  restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\zshap\source\repos\Linq.Chunk\Linq.Chunk\bin\Release\net8.0\da074d0c-d4ae-4863-9dc7-4d9104532ab7\obj\Release\net8.0/" /p:OutDir="C:\Users\zshap\source\repos\Linq.Chunk\Linq.Chunk\bin\Release\net8.0\da074d0c-d4ae-4863-9dc7-4d9104532ab7\bin\Release\net8.0/" /p:OutputPath="C:\Users\zshap\source\repos\Linq.Chunk\Linq.Chunk\bin\Release\net8.0\da074d0c-d4ae-4863-9dc7-4d9104532ab7\bin\Release\net8.0/" in C:\Users\zshap\source\repos\Linq.Chunk\Linq.Chunk\bin\Release\net8.0\da074d0c-d4ae-4863-9dc7-4d9104532ab7
+// command took 1.16 sec and exited with 0
+// start dotnet  build -c Release --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 /p:Deterministic=true /p:Optimize=true /p:IntermediateOutputPath="C:\Users\zshap\source\repos\Linq.Chunk\Linq.Chunk\bin\Release\net8.0\da074d0c-d4ae-4863-9dc7-4d9104532ab7\obj\Release\net8.0/" /p:OutDir="C:\Users\zshap\source\repos\Linq.Chunk\Linq.Chunk\bin\Release\net8.0\da074d0c-d4ae-4863-9dc7-4d9104532ab7\bin\Release\net8.0/" /p:OutputPath="C:\Users\zshap\source\repos\Linq.Chunk\Linq.Chunk\bin\Release\net8.0\da074d0c-d4ae-4863-9dc7-4d9104532ab7\bin\Release\net8.0/" --output "C:\Users\zshap\source\repos\Linq.Chunk\Linq.Chunk\bin\Release\net8.0\da074d0c-d4ae-4863-9dc7-4d9104532ab7\bin\Release\net8.0/" in C:\Users\zshap\source\repos\Linq.Chunk\Linq.Chunk\bin\Release\net8.0\da074d0c-d4ae-4863-9dc7-4d9104532ab7
+// command took 3.6 sec and exited with 0
+// ***** Done, took 00:00:04 (4.81 sec)   *****
+// Found 2 benchmarks:
+//   ChunkBenchmarks.BenchmarkLinqChunk: DefaultJob
+//   ChunkBenchmarks.BenchmarkManualChunk: DefaultJob
+
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: ChunkBenchmarks.BenchmarkLinqChunk: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet da074d0c-d4ae-4863-9dc7-4d9104532ab7.dll --anonymousPipes 1320 1324 --benchmarkName Linq.Chunk.ChunkBenchmarks.BenchmarkLinqChunk --job Default --benchmarkId 0 in C:\Users\zshap\source\repos\Linq.Chunk\Linq.Chunk\bin\Release\net8.0\da074d0c-d4ae-4863-9dc7-4d9104532ab7\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 135000.00 ns, 135.0000 us/op
+WorkloadJitting  1: 1 op, 30204966200.00 ns, 30.2050 s/op
+
+WorkloadWarmup   1: 1 op, 3140464000.00 ns, 3.1405 s/op
+WorkloadWarmup   2: 1 op, 3105266900.00 ns, 3.1053 s/op
+WorkloadWarmup   3: 1 op, 3127527500.00 ns, 3.1275 s/op
+WorkloadWarmup   4: 1 op, 3123864300.00 ns, 3.1239 s/op
+WorkloadWarmup   5: 1 op, 3112573300.00 ns, 3.1126 s/op
+WorkloadWarmup   6: 1 op, 3125887000.00 ns, 3.1259 s/op
+WorkloadWarmup   7: 1 op, 3126324700.00 ns, 3.1263 s/op
+WorkloadWarmup   8: 1 op, 3118667000.00 ns, 3.1187 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3150112900.00 ns, 3.1501 s/op
+WorkloadActual   2: 1 op, 3174931800.00 ns, 3.1749 s/op
+WorkloadActual   3: 1 op, 3156419500.00 ns, 3.1564 s/op
+WorkloadActual   4: 1 op, 3127281100.00 ns, 3.1273 s/op
+WorkloadActual   5: 1 op, 3125951100.00 ns, 3.1260 s/op
+WorkloadActual   6: 1 op, 3111054400.00 ns, 3.1111 s/op
+WorkloadActual   7: 1 op, 3109616000.00 ns, 3.1096 s/op
+WorkloadActual   8: 1 op, 3122890100.00 ns, 3.1229 s/op
+WorkloadActual   9: 1 op, 3106571600.00 ns, 3.1066 s/op
+WorkloadActual  10: 1 op, 3122579400.00 ns, 3.1226 s/op
+WorkloadActual  11: 1 op, 3110877000.00 ns, 3.1109 s/op
+WorkloadActual  12: 1 op, 3123600500.00 ns, 3.1236 s/op
+WorkloadActual  13: 1 op, 3128470900.00 ns, 3.1285 s/op
+WorkloadActual  14: 1 op, 3099166300.00 ns, 3.0992 s/op
+WorkloadActual  15: 1 op, 3134978400.00 ns, 3.1350 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3150112900.00 ns, 3.1501 s/op
+WorkloadResult   2: 1 op, 3156419500.00 ns, 3.1564 s/op
+WorkloadResult   3: 1 op, 3127281100.00 ns, 3.1273 s/op
+WorkloadResult   4: 1 op, 3125951100.00 ns, 3.1260 s/op
+WorkloadResult   5: 1 op, 3111054400.00 ns, 3.1111 s/op
+WorkloadResult   6: 1 op, 3109616000.00 ns, 3.1096 s/op
+WorkloadResult   7: 1 op, 3122890100.00 ns, 3.1229 s/op
+WorkloadResult   8: 1 op, 3106571600.00 ns, 3.1066 s/op
+WorkloadResult   9: 1 op, 3122579400.00 ns, 3.1226 s/op
+WorkloadResult  10: 1 op, 3110877000.00 ns, 3.1109 s/op
+WorkloadResult  11: 1 op, 3123600500.00 ns, 3.1236 s/op
+WorkloadResult  12: 1 op, 3128470900.00 ns, 3.1285 s/op
+WorkloadResult  13: 1 op, 3099166300.00 ns, 3.0992 s/op
+WorkloadResult  14: 1 op, 3134978400.00 ns, 3.1350 s/op
+// GC:  0 0 0 3924728 1
+// Threading:  10100 2164 1
+// Exceptions:  10
+
+// AfterAll
+// Benchmark Process 21076 has exited with code 0.
+
+Mean = 3.124 s, StdErr = 0.004 s (0.14%), N = 14, StdDev = 0.016 s
+Min = 3.099 s, Q1 = 3.111 s, Median = 3.123 s, Q3 = 3.128 s, Max = 3.156 s
+IQR = 0.017 s, LowerFence = 3.085 s, UpperFence = 3.154 s
+ConfidenceInterval = [3.105 s; 3.142 s] (CI 99.9%), Margin = 0.018 s (0.58% of Mean)
+Skewness = 0.52, Kurtosis = 2.37, MValue = 2
+
+// ** Remained 1 (50.0%) benchmark(s) to run. Estimated finish 2024-08-08 22:33 (0h 1m from now) **
+Setup power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// **************************
+// Benchmark: ChunkBenchmarks.BenchmarkManualChunk: DefaultJob
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet da074d0c-d4ae-4863-9dc7-4d9104532ab7.dll --anonymousPipes 1320 1336 --benchmarkName Linq.Chunk.ChunkBenchmarks.BenchmarkManualChunk --job Default --benchmarkId 1 in C:\Users\zshap\source\repos\Linq.Chunk\Linq.Chunk\bin\Release\net8.0\da074d0c-d4ae-4863-9dc7-4d9104532ab7\bin\Release\net8.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// BenchmarkDotNet v0.14.0
+// Runtime=.NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+// GC=Concurrent Workstation
+// HardwareIntrinsics=AVX-512F+CD+BW+DQ+VL+VBMI,AES,BMI1,BMI2,FMA,LZCNT,PCLMUL,POPCNT VectorSize=256
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 141400.00 ns, 141.4000 us/op
+WorkloadJitting  1: 1 op, 28683680500.00 ns, 28.6837 s/op
+
+WorkloadWarmup   1: 1 op, 3122132400.00 ns, 3.1221 s/op
+WorkloadWarmup   2: 1 op, 3127810200.00 ns, 3.1278 s/op
+WorkloadWarmup   3: 1 op, 3121511200.00 ns, 3.1215 s/op
+WorkloadWarmup   4: 1 op, 3110746100.00 ns, 3.1107 s/op
+WorkloadWarmup   5: 1 op, 3124634300.00 ns, 3.1246 s/op
+WorkloadWarmup   6: 1 op, 3104371800.00 ns, 3.1044 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3119388400.00 ns, 3.1194 s/op
+WorkloadActual   2: 1 op, 3118717200.00 ns, 3.1187 s/op
+WorkloadActual   3: 1 op, 3118849300.00 ns, 3.1188 s/op
+WorkloadActual   4: 1 op, 3122332400.00 ns, 3.1223 s/op
+WorkloadActual   5: 1 op, 3125843000.00 ns, 3.1258 s/op
+WorkloadActual   6: 1 op, 3121382700.00 ns, 3.1214 s/op
+WorkloadActual   7: 1 op, 3107693300.00 ns, 3.1077 s/op
+WorkloadActual   8: 1 op, 3115690900.00 ns, 3.1157 s/op
+WorkloadActual   9: 1 op, 3111264900.00 ns, 3.1113 s/op
+WorkloadActual  10: 1 op, 3119748000.00 ns, 3.1197 s/op
+WorkloadActual  11: 1 op, 3122565100.00 ns, 3.1226 s/op
+WorkloadActual  12: 1 op, 3107908400.00 ns, 3.1079 s/op
+WorkloadActual  13: 1 op, 3106064900.00 ns, 3.1061 s/op
+WorkloadActual  14: 1 op, 3146527900.00 ns, 3.1465 s/op
+WorkloadActual  15: 1 op, 3108851200.00 ns, 3.1089 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3119388400.00 ns, 3.1194 s/op
+WorkloadResult   2: 1 op, 3118717200.00 ns, 3.1187 s/op
+WorkloadResult   3: 1 op, 3118849300.00 ns, 3.1188 s/op
+WorkloadResult   4: 1 op, 3122332400.00 ns, 3.1223 s/op
+WorkloadResult   5: 1 op, 3125843000.00 ns, 3.1258 s/op
+WorkloadResult   6: 1 op, 3121382700.00 ns, 3.1214 s/op
+WorkloadResult   7: 1 op, 3107693300.00 ns, 3.1077 s/op
+WorkloadResult   8: 1 op, 3115690900.00 ns, 3.1157 s/op
+WorkloadResult   9: 1 op, 3111264900.00 ns, 3.1113 s/op
+WorkloadResult  10: 1 op, 3119748000.00 ns, 3.1197 s/op
+WorkloadResult  11: 1 op, 3122565100.00 ns, 3.1226 s/op
+WorkloadResult  12: 1 op, 3107908400.00 ns, 3.1079 s/op
+WorkloadResult  13: 1 op, 3106064900.00 ns, 3.1061 s/op
+WorkloadResult  14: 1 op, 3108851200.00 ns, 3.1089 s/op
+// GC:  0 0 0 3933152 1
+// Threading:  10107 2272 1
+// Exceptions:  10
+
+// AfterAll
+// Benchmark Process 7424 has exited with code 0.
+
+Mean = 3.116 s, StdErr = 0.002 s (0.06%), N = 14, StdDev = 0.007 s
+Min = 3.106 s, Q1 = 3.109 s, Median = 3.119 s, Q3 = 3.121 s, Max = 3.126 s
+IQR = 0.012 s, LowerFence = 3.092 s, UpperFence = 3.138 s
+ConfidenceInterval = [3.109 s; 3.124 s] (CI 99.9%), Margin = 0.007 s (0.24% of Mean)
+Skewness = -0.27, Kurtosis = 1.43, MValue = 2
+
+// ** Remained 0 (0.0%) benchmark(s) to run. Estimated finish 2024-08-08 22:33 (0h 0m from now) **
+Successfully reverted power plan (GUID: 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c FriendlyName: High performance)
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\Linq.Chunk.ChunkBenchmarks-report.csv
+  BenchmarkDotNet.Artifacts\results\Linq.Chunk.ChunkBenchmarks-report-github.md
+  BenchmarkDotNet.Artifacts\results\Linq.Chunk.ChunkBenchmarks-report.html
+
+// * Detailed results *
+ChunkBenchmarks.BenchmarkLinqChunk: DefaultJob
+Runtime = .NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 3.124 s, StdErr = 0.004 s (0.14%), N = 14, StdDev = 0.016 s
+Min = 3.099 s, Q1 = 3.111 s, Median = 3.123 s, Q3 = 3.128 s, Max = 3.156 s
+IQR = 0.017 s, LowerFence = 3.085 s, UpperFence = 3.154 s
+ConfidenceInterval = [3.105 s; 3.142 s] (CI 99.9%), Margin = 0.018 s (0.58% of Mean)
+Skewness = 0.52, Kurtosis = 2.37, MValue = 2
+-------------------- Histogram --------------------
+[3.097 s ; 3.160 s) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+ChunkBenchmarks.BenchmarkManualChunk: DefaultJob
+Runtime = .NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI; GC = Concurrent Workstation
+Mean = 3.116 s, StdErr = 0.002 s (0.06%), N = 14, StdDev = 0.007 s
+Min = 3.106 s, Q1 = 3.109 s, Median = 3.119 s, Q3 = 3.121 s, Max = 3.126 s
+IQR = 0.012 s, LowerFence = 3.092 s, UpperFence = 3.138 s
+ConfidenceInterval = [3.109 s; 3.124 s] (CI 99.9%), Margin = 0.007 s (0.24% of Mean)
+Skewness = -0.27, Kurtosis = 1.43, MValue = 2
+-------------------- Histogram --------------------
+[3.103 s ; 3.129 s) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet v0.14.0, Windows 11 (10.0.22631.3880/23H2/2023Update/SunValley3)
+11th Gen Intel Core i7-1165G7 2.80GHz, 1 CPU, 8 logical and 4 physical cores
+.NET SDK 8.0.200
+  [Host]     : .NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+  DefaultJob : .NET 8.0.2 (8.0.224.6711), X64 RyuJIT AVX-512F+CD+BW+DQ+VL+VBMI
+
+
+| Method               | Mean    | Error    | StdDev   | Allocated |
+|--------------------- |--------:|---------:|---------:|----------:|
+| BenchmarkLinqChunk   | 3.124 s | 0.0181 s | 0.0161 s |   3.74 MB |
+| BenchmarkManualChunk | 3.116 s | 0.0074 s | 0.0065 s |   3.75 MB |
+
+// * Hints *
+Outliers
+  ChunkBenchmarks.BenchmarkLinqChunk: Default   -> 1 outlier  was  removed (3.17 s)
+  ChunkBenchmarks.BenchmarkManualChunk: Default -> 1 outlier  was  removed (3.15 s)
+
+// * Legends *
+  Mean      : Arithmetic mean of all measurements
+  Error     : Half of 99.9% confidence interval
+  StdDev    : Standard deviation of all measurements
+  Allocated : Allocated memory per single operation (managed only, inclusive, 1KB = 1024B)
+  1 s       : 1 Second (1 sec)
+
+// * Diagnostic Output - MemoryDiagnoser *
+
+
+// ***** BenchmarkRunner: End *****
+Run time: 00:03:24 (204.09 sec), executed benchmarks: 2
+
+Global total time: 00:03:29 (209.08 sec), executed benchmarks: 2
+// * Artifacts cleanup *
+Artifacts cleanup is finished

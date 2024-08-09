@@ -1,0 +1,9 @@
+﻿services:
+  linq-chunk-benchmarks:
+    image: benchmarkchunk
+    build:
+      context: ./Linq.Chunk
+    cpus: 4
+    volumes:
+      - ./BenchmarkDotNet.Artifacts:/app/BenchmarkDotNet.Artifacts
+    command: ["dotnet", "Linq.Chunk.dll", "--filter", "*"]
